@@ -18,7 +18,7 @@ To determine if the atiohiometric matrix is elementally balanced, the following 
 This will formulate the stoichiometric array,``S`` , the elemetal array, ``A``,  and then compute the product of ``transpose(A)*S``, which is defined as ``balance``. The first five columns and the final column of the ``balance`` array should contain only zeros, indicating that the urea cycle reconstruction is elementally balanced.
 
 ### How do I estimate the fluxes?
-To estimate the Urea flux, first define the array of species lower and upper bounds, contained in ``species array lower and upper``. Similarly, define the array of flux lower and upper bounds contained in ``flux array lower and upper``. Define the input c, the vector holding indicies for out objective vector, which in our case is urea.
+To estimate the Urea flux, first define the array of species lower and upper bounds, contained in ``species array lower and upper.CSV``. Similarly, define the array of flux lower and upper bounds contained in ``flux array lower and upper.CSV``. Define the input c, the vector holding indicies for out objective vector, which in our case is urea.
 
   ```jl
     julia > LxUx=Matrix(CSV.read("species array lower and upper.CSV"))
