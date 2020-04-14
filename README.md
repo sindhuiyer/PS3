@@ -7,7 +7,7 @@ The stoichiometric matrix was constructed using data from KEGG (arginine biosynt
 ### How to determine is the urea cycle reconstruction is elemntally balanced for C, H,N,O,P, and S
 To check if the chemical reactions in the the ``data.CSV`` file are balanced, the elemental matrix was constructed by looking at the elemental compositions of the materials in each reaction. The matrix is contained in the ``element array.CSV`` file.
 
-To determine if the atiohiometric matrix is elementally balanced, the following commands are issued:
+To determine if the stiohiometric matrix is elementally balanced, the following commands are issued:
 
   ```jl
     julia > using CSV
