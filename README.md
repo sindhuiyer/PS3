@@ -10,7 +10,7 @@ To check if the chemical reactions in the the ``data.CSV`` file are balanced, th
 To determine if the atiohiometric matrix is elementally balanced, the following commands are issued:
 
   ```jl
-    using CSV
+    julia > using CSV
     julia > S=Matrix(CSV.read("data.CSV";header=0))
     julia > A=Matrix(CSV.read("element array.CSV";header=0))
     julia > balance=A'S
